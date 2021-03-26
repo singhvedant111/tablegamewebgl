@@ -43,6 +43,7 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 		<script>
 		  var unityInstance = UnityLoader.instantiate("unityContainer", "Build/team table webgl 8.json", {onProgress: UnityProgress});
 		</script>
+
 </head>
 
 <body>
@@ -54,7 +55,13 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 				<p>Email Us : <span class="mail"><a href="mailto:info@example.com">info@example.com</a></span></p>
 			</div>
 		</div>
-		
+		<div class="w3layouts_header_right">
+			<form action="#" method="post">
+				<input name="Search heare" type="search" placeholder="Search" required="">
+
+				<input type="submit" value="">
+			</form>
+		</div>
 		<div class="clearfix"> </div>
 	</div>
 	<div class="w3_navigation">
@@ -90,32 +97,7 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 		</div>
 	</div>
 	<!-- //header -->
-	<!-- banner -->
-	<div class="banner">
-		<!--Slider-->
-		<div class="slider">
-			<div class="callbacks_container">
-				<ul class="rslides" id="slider3">
-					<li>
-						<div class="webgl-content">
-							<div id="unityContainer" style="width: 960px; height: 600px"></div>
-							<div class="footer">
-							  <div class="webgl-logo"></div>
-							  <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-							  <div class="title">Team Table</div>
-							</div>
-						  </div>
-					</li>
-					
 
-
-				</ul>
-
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<!--//Slider-->
-	</div>
 	<!-- //banner -->
 	<!-- Modal1 -->
 	<div class="modal fade" id="myModal1" role="dialog">
@@ -172,38 +154,14 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 	<div class="services" id="services">
 		<h3 class="w3l_head w3l_head1">Services</h3>
 		<p class="w3ls_head_para w3ls_head_para1">View Our Services</p>
-		<div class="services-agile-w3l">
-			<div class="col-md-3 services-gd text-center">
-				<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-					<a href="#" class="hi-icon"><img src="images/s1.png" alt=" " /></a>
-				</div>
-				<h4>Service 1</h4>
-				<p>Lorem Ipsum</p>
+		<div class="webgl-content">
+			<div id="unityContainer" style="width: 960px; height: 600px"></div>
+			<div class="footer">
+			  <div class="webgl-logo"></div>
+			  <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+			  <div class="title">Team Table</div>
 			</div>
-
-			<div class="col-md-3 services-gd text-center">
-				<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-					<a href="#" class="hi-icon"><img src="images/s2.png" alt=" " /></a>
-				</div>
-				<h4>Service 2</h4>
-				<p>Lorem Ipsum</p>
-			</div>
-			<div class="col-md-3 services-gd text-center">
-				<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-					<a href="#" class="hi-icon"><img src="images/s3.png" alt=" " /></a>
-				</div>
-				<h4>Service 3</h4>
-				<p>Lorem Ipsum</p>
-			</div>
-			<div class="col-md-3 services-gd text-center">
-				<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-					<a href="#" class="hi-icon"><img src="images/s4.png" alt=" " /></a>
-				</div>
-				<h4>Service 4</h4>
-				<p>Lorem Ipsum</p>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
+		  </div>
 	</div>
 	<!-- //services -->
 
