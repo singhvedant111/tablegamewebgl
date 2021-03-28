@@ -2,6 +2,7 @@
 Author: W3layouts
 Author URL: http://w3layouts.com
 --*/
+
 html, body{
  font-family: 'Raleway', sans-serif;
  font-size: 100%;
@@ -1692,8 +1693,18 @@ a.read {
   -webkit-appearance: none;
 }
 a.read:hover{
- background:#fec63f;
+ background:#e67a16;
 }
+button.read {
+	color: #fff;
+	background-color: #cf3227;
+	font-size: 1em;
+	width: 60px; float: right;
+	-webkit-appearance: none;
+  }
+  button.read:hover{
+   background:#fec63f;
+  }
 .support input[type="text"] {
   width: 76%;
   padding: 12px;

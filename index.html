@@ -24,9 +24,49 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script>
   var unityInstance = UnityLoader.instantiate("unityContainer", "Build/team table webgl 8.json", {onProgress: UnityProgress});
 </script>
+<style>
+
+</style>
+<script>
+	function showrules(){
+		var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on the button, open the modal
+		btn.onclick = function() {
+		modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+		}
+	}
+</script>
 <!--//webfonts-->
 </head>
 <body>
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+		  <span class="close">&times;</span>
+		  <p>Some text in the Modal..</p>
+		</div>
+	  
+	  </div>
 	<!--start-home-->
 	<div id="home" class="header">
 		<div class="header-top">
@@ -62,11 +102,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	
 		</div>
+	
 		<div class="webgl-content" >
 			<div id="unityContainer"></div>
 			<div class="footer">
 			  <div class="webgl-logo"></div>
 			  <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+			  <button class="read" onclick="showrules();">Rules</button>
 			  <div class="title">Team Table</div>
 			</div>
 		  </div>
