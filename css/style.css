@@ -5,7 +5,7 @@ Author URL: http://w3layouts.com
 html, body{
  font-family: 'Raleway', sans-serif;
  font-size: 100%;
- background: #FFf;
+ background: #29292A;
 }
 body a,.grid_1,plan_1,plan_1.one,plan_1.two,i.icons1, i.icons2, i.icons3, i.icons4, i.icons5, i.icons6 {
 	transition:0.5s all;
@@ -59,7 +59,7 @@ label{
 }
 .top-menu {
   position: absolute;
-  left:0%;
+  left:25%;
   top: 78%;
   z-index: 999;
 }
@@ -150,7 +150,7 @@ nav a:focus {
 }
 /*----start-home---*/
 .header-top {
-  background: #fff;
+  background: #29292A;
 }
 .head-nav p {
   text-align: center;
