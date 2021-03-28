@@ -14,7 +14,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' />	
-<script src="js/jquery-1.11.1.min.js"></script>
+
 <!--webfonts-->
 <link href='//fonts.googleapis.com/css?family=Fugaz+One|Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" href="TemplateData/favicon.ico">
@@ -24,49 +24,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script>
   var unityInstance = UnityLoader.instantiate("unityContainer", "Build/team table webgl 8.json", {onProgress: UnityProgress});
 </script>
-<style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
-</style>
-<script>
-	function showrules(){
-		var modal = document.getElementById("myModal");
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
-// Get the button that opens the modal
-		var btn = document.getElementById("myBtn");
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on the button, open the modal
-		btn.onclick = function() {
-		modal.style.display = "block";
-		}
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-		modal.style.display = "none";
-		}
-
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		if (event.target == modal) {
-			modal.style.display = "none";
-		}
-		}
-	}
-</script>
 <!--//webfonts-->
 </head>
 <body>
-	<div id="myModal" class="modal">
 
-		<!-- Modal content -->
-		<div class="modal-content">
-		  <span class="close">&times;</span>
-		  <p>Some text in the Modal..</p>
-		</div>
-	  
-	  </div>
 	<!--start-home-->
 	<div id="home" class="header">
 		<div class="header-top">
@@ -102,13 +69,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	
 		</div>
-	
+		<div id="ex1" class="modal">
+			<p>Thanks for clicking. That felt good.</p>
+			
+		  </div>
 		<div class="webgl-content" >
 			<div id="unityContainer"></div>
 			<div class="footer">
 			  <div class="webgl-logo"></div>
 			  <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-			  <button class="read" onclick="showrules();">Rules</button>
+			  <a class="rules" href="#ex1" rel="modal:open">Rules</a>
 			  <div class="title">Team Table</div>
 			</div>
 		  </div>
