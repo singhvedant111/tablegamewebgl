@@ -9,7 +9,18 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/team table webgl 8.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/team table webgl 29_03_21 02.json", {onProgress: UnityProgress});
+	  
+	  var isActive;
+
+	document.addEventListener('visibilitychange', function () {
+	if (document.visibilityState == "hidden") {
+		isActive = setInterval(function() { SendMessage("Receiver", "DoSomething"); }, 250);
+	} else {
+		clearInterval(isActive);
+		isActive = false;
+	}
+	});
     </script>
   </head>
   <body>
