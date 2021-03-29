@@ -1695,7 +1695,7 @@ a.read {
 a.read:hover{
  background:#e67a16;
 }
-a.rules {
+button.rules {
 	color: #fff;
 	background-color: #cf3227;
 	font-size: 1em;
@@ -1703,7 +1703,7 @@ a.rules {
 	width: max-content; float: right;
 	-webkit-appearance: none;
   }
-  a.rules:hover{
+  button.rules:hover{
    background:#fec63f;
   }
 .support input[type="text"] {
