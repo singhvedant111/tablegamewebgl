@@ -6,7 +6,7 @@ Author URL: http://w3layouts.com
 html, body{
  font-family: 'Raleway', sans-serif;
  font-size: 100%;
- background: #29292A;
+ background-image: url("../TemplateData/maze.jpg");
 }
 body a,.grid_1,plan_1,plan_1.one,plan_1.two,i.icons1, i.icons2, i.icons3, i.icons4, i.icons5, i.icons6 {
 	transition:0.5s all;
@@ -151,7 +151,7 @@ nav a:focus {
 }
 /*----start-home---*/
 .header-top {
-  background: #29292A;
+	background-image: url("../TemplateData/maze.jpg");
 }
 .head-nav p {
   text-align: center;
@@ -1659,7 +1659,7 @@ p.reply i:hover{
 }
 /*--footer-main--*/
 .footer-main {
-   background: #29292A;
+	background-image: url("../TemplateData/maze.jpg");
     padding: 2em 0 1em;
   text-align:left;
 }
@@ -2688,7 +2688,7 @@ button.rules {
 	  padding: 1em 0 2em 0;
 	}
 	.footer-main {
-	  background: #29292A;
+		background-image: url("../TemplateData/maze.jpg");
 	  padding: 1em 0 0em;
 	 }
 	 .footer-main-grids h3 {
