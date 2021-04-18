@@ -1600,7 +1600,7 @@ p.reply i:hover{
 	text-decoration: none;
 }
 .contact-top-right form input[type="text"], .contact-top-right form input[type="email"] {
-  width: 32.95%;
+  width: 100%;
   color: #898888;
   outline: none;
   font-size:0.9em;
@@ -1659,7 +1659,7 @@ p.reply i:hover{
 }
 .contact-top-right {
 	  float: right;
-	  width: 69%;
+	  width: 100%;
 }
 /*--footer-main--*/
 .footer-main {
