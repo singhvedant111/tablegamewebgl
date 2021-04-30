@@ -152,11 +152,7 @@ nav a:focus {
 	}
 }
 /*----start-home---*/
-.header-top {
-	background-image: url("../TemplateData/maze.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+
 .head-nav p {
   text-align: center;
   text-transform: uppercase;
